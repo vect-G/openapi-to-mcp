@@ -10,7 +10,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write
+      contents: read
 
     steps:
       - name: Checkout
@@ -29,6 +29,13 @@ jobs:
           twine check dist/*
 
       - name: Publish to PyPI
+        if: ${{ secrets.PYPI_API_TOKEN != '' }}
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
+
+      - name: Skip PyPI publish (token not configured)
+        if: ${{ secrets.PYPI_API_TOKEN == '' }}
+        run: |
+          echo "PYPI_API_TOKEN is not set. Skipping package upload."
+          echo "To enable publish, add PYPI_API_TOKEN in repo Settings -> Secrets and variables -> Actions."

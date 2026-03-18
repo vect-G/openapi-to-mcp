@@ -7,6 +7,20 @@
 - Replace `<YOUR_HANDLE>` in launch copies.
 - (Optional) Replace security email in `SECURITY.md`.
 
+## 0.5) Choose PyPI publish mode
+
+Option A (simplest): API token
+
+- In PyPI, create an API token (project-scoped recommended).
+- In GitHub repo: `Settings -> Secrets and variables -> Actions`
+- Add secret: `PYPI_API_TOKEN`
+
+Option B: Trusted Publisher (OIDC)
+
+- Configure Trusted Publisher on PyPI for this exact repo/workflow.
+- If claims do not match, you'll see `invalid-publisher`.
+- This repository currently defaults to API token mode.
+
 ## 1) Final local checks
 
 ```bash
