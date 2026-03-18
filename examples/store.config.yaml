@@ -1,0 +1,10 @@
+runtime:
+  base_url: https://api.example.com/v1
+  timeout_seconds: 30
+
+naming:
+  prefix: shop
+
+filters:
+  include_tags: [orders]
+  methods: [get, post]

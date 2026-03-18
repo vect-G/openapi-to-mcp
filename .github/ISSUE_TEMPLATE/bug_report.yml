@@ -1,0 +1,35 @@
+name: Bug Report
+description: Report a reproducible bug
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened and what did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Share exact commands and sample OpenAPI files when possible.
+      placeholder: |
+        1. openapi-to-mcp run ...
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste relevant stack traces or command output.
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: openapi-to-mcp version
+      placeholder: 0.3.0

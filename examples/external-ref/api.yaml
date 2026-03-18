@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: External Ref Demo
+  version: 1.0.0
+servers:
+  - url: https://api.example.com
+paths:
+  /orders:
+    post:
+      operationId: createOrder
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./schemas.yaml#/OrderCreate
+      responses:
+        '201':
+          description: Created

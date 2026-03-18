@@ -1,0 +1,12 @@
+OrderCreate:
+  type: object
+  required: [item]
+  properties:
+    item:
+      $ref: '#/Item'
+Item:
+  type: object
+  required: [id]
+  properties:
+    id:
+      type: string
