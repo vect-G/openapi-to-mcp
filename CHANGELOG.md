@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2 - 2026-03-18
+
+- CI: fixed publish workflow expression error by detecting PyPI token via step output.
+- CI: publish job now cleanly skips upload when `PYPI_API_TOKEN` is absent.
+
 ## 0.3.1 - 2026-03-18
 
 - CI: publish workflow now skips PyPI upload when `PYPI_API_TOKEN` is not configured.

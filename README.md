@@ -149,6 +149,7 @@ CI and release workflows are provided in `.github/workflows/`.
 - [docs/post-template.md](docs/post-template.md)
 - [docs/release/v0.3.0-release-notes.md](docs/release/v0.3.0-release-notes.md)
 - [docs/release/v0.3.1-release-notes.md](docs/release/v0.3.1-release-notes.md)
+- [docs/release/v0.3.2-release-notes.md](docs/release/v0.3.2-release-notes.md)
 - [docs/release/launch-copies.md](docs/release/launch-copies.md)
 - [docs/release/repo-branding.md](docs/release/repo-branding.md)
 - [docs/release/publish-runbook.md](docs/release/publish-runbook.md)
