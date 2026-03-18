@@ -1,0 +1,57 @@
+name: OpenAPI Compatibility Request
+description: Share your OpenAPI/Swagger spec and I will help make it work
+labels: [spec-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your spec.
+        We use these reports to improve compatibility quickly.
+
+  - type: dropdown
+    id: spec_type
+    attributes:
+      label: Spec type
+      options:
+        - OpenAPI 3.x
+        - Swagger 2.0
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: spec_url
+    attributes:
+      label: Spec URL (if public)
+      description: Paste your `openapi.json`/`swagger.json` URL
+      placeholder: https://example.com/openapi.json
+
+  - type: textarea
+    id: spec_snippet
+    attributes:
+      label: Minimal reproducible snippet (if private)
+      description: Paste the failing path + schema fragment
+
+  - type: textarea
+    id: command
+    attributes:
+      label: Command used
+      description: Paste the exact command you ran
+      render: shell
+      placeholder: openapi-to-mcp list ./openapi.yaml --json
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error output
+      render: shell
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What output/tools were you expecting?
+    validations:
+      required: true

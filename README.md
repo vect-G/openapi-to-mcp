@@ -1,6 +1,20 @@
 # openapi-to-mcp
 
+[![CI](https://github.com/vect-G/openapi-to-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/vect-G/openapi-to-mcp/actions/workflows/ci.yml)
+[![Publish](https://github.com/vect-G/openapi-to-mcp/actions/workflows/publish.yml/badge.svg)](https://github.com/vect-G/openapi-to-mcp/actions/workflows/publish.yml)
+[![GitHub Release](https://img.shields.io/github/v/release/vect-G/openapi-to-mcp)](https://github.com/vect-G/openapi-to-mcp/releases)
+[![GitHub stars](https://img.shields.io/github/stars/vect-G/openapi-to-mcp?style=social)](https://github.com/vect-G/openapi-to-mcp/stargazers)
+[![License](https://img.shields.io/github/license/vect-G/openapi-to-mcp)](LICENSE)
+
 Turn any OpenAPI/Swagger spec into a runnable MCP server in one command.
+
+## 30s Try
+
+```bash
+openapi-to-mcp run https://petstore3.swagger.io/api/v3/openapi.json
+```
+
+If it fails on your spec, open an **OpenAPI Compatibility Request** issue.
 
 ## Why developers star this
 
@@ -8,12 +22,6 @@ Turn any OpenAPI/Swagger spec into a runnable MCP server in one command.
 - Zero boilerplate: no hand-written MCP wrappers per endpoint.
 - Production-minded: filtering, naming rules, auth mapping, CI-ready packaging.
 - Handles real-world specs: supports external `$ref` files and Swagger 2 body params.
-
-## One-line demo
-
-```bash
-openapi-to-mcp run https://petstore3.swagger.io/api/v3/openapi.json
-```
 
 This exposes Petstore operations as MCP tools over `stdio`.
 
@@ -151,8 +159,11 @@ CI and release workflows are provided in `.github/workflows/`.
 - [docs/release/v0.3.1-release-notes.md](docs/release/v0.3.1-release-notes.md)
 - [docs/release/v0.3.2-release-notes.md](docs/release/v0.3.2-release-notes.md)
 - [docs/release/launch-copies.md](docs/release/launch-copies.md)
+- [docs/release/launch-copies-v0.3.2.md](docs/release/launch-copies-v0.3.2.md)
 - [docs/release/repo-branding.md](docs/release/repo-branding.md)
 - [docs/release/publish-runbook.md](docs/release/publish-runbook.md)
+- [docs/release/pinned-issue-openapi-drop.md](docs/release/pinned-issue-openapi-drop.md)
+- [docs/release/day-2-growth-playbook.md](docs/release/day-2-growth-playbook.md)
 - [scripts/demo.sh](scripts/demo.sh)
 
 ## More examples

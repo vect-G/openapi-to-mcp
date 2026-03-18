@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/vect-G/openapi-to-mcp/security/policy
+    about: Please report security vulnerabilities through the security policy.
