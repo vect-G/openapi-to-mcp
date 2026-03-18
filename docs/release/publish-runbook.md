@@ -1,4 +1,4 @@
-# Publish Runbook (v0.3.0)
+# Publish Runbook
 
 ## 0) Fill placeholders
 
@@ -34,19 +34,19 @@ conda run -n openapi-mcp openapi-to-mcp list examples/swagger2.yaml --json
 ```bash
 git init
 git add .
-git commit -m "release: v0.3.0"
+git commit -m "release: vX.Y.Z"
 git branch -M main
 git remote add origin https://github.com/vect-G/openapi-to-mcp.git
 git push -u origin main
-git tag v0.3.0
-git push origin v0.3.0
+git tag vX.Y.Z
+git push origin vX.Y.Z
 ```
 
 ## 3) Create GitHub Release
 
-- Tag: `v0.3.0`
-- Title: `openapi-to-mcp v0.3.0`
-- Body: copy `docs/release/v0.3.0-release-notes.md`
+- Tag: `vX.Y.Z`
+- Title: `openapi-to-mcp vX.Y.Z`
+- Body: copy matching release notes from `docs/release/`
 
 ## 4) Publish announcement
 

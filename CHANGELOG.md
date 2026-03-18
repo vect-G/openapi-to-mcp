@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 - 2026-03-18
+
+- CI: publish workflow now skips PyPI upload when `PYPI_API_TOKEN` is not configured.
+- Docs: added explicit PyPI token vs trusted publisher guidance to publish runbook.
+
 ## 0.3.0 - 2026-03-18
 
 - Added external `$ref` resolution across local files and URLs.

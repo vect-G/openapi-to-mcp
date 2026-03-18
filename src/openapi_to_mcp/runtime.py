@@ -25,7 +25,7 @@ class RuntimeConfig:
     server_version: str
     base_url: str
     timeout_seconds: float = 30.0
-    user_agent: str = "openapi-to-mcp/0.3"
+    user_agent: str = "openapi-to-mcp/0.3.1"
 
 
 class OpenAPIMCPRuntime:
